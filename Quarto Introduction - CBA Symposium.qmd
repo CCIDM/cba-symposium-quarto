@@ -1,0 +1,70 @@
+---
+title: "CBA Symposium: <span style='color: #b52b4c;'><br>An Introduction</span>"
+author: "Center for Customer Insights and Digital Marketing"
+institute: "Cal Poly Pomona"
+date: "04/25/2025"
+date-format: "M/D/YYYY"
+format:
+  revealjs:
+    center: false
+    logo: "logos/ccidm-cpp logo.png"
+    theme: [default, theme.scss]
+    slide-number: true
+    toc: true
+    toc-depth: 1
+    code-link: true
+    link-external-newwindow: true
+    #chalkboard: true #cannot use with self-contained
+    embed-resources: true
+    multiplex: true
+    width: 1600
+    height: 900
+    margin: 0.1
+    minScale: 0.2
+    maxScale: 2.0
+    scrollable: true
+execute: 
+  freeze: auto
+---
+
+# Greetings and Introductions
+
+-   Jae Jung, Ph.D., Professor of Marketing, Presenter
+-   Jarrod Griffin, Master's Student - Digital Marketing, Presenter, Moderator
+
+# Announcement
+
+-   Workshop slide materials available at <https://github.com/CCIDM/cba-symposium-quarto>
+-   Live slides available at <https://ccidm.github.io/cba-symposium-quarto>
+-   Questions
+
+# Overall Agenda
+
+::: incremental
+1.  Greetings and Introduction to Presenters (Moderator)
+2.  Announcement (Moderator)
+3.  Expected Learning Outcomes & Agenda (Moderator)
+4.  Overview of Quarto and reproducible publications (20 min)
+    -   Introduction to Quarto
+    -   Quarto Formats
+    -   Samples of Quarto documents
+5.  Publishing a professional portfolio website with Quarto (40 min)
+6.  Q&A (5 min)
+:::
+
+# Expected Learning outcomes:
+
+After taking this workshop, participants should be able to:
+
+::: {.medium-small .incremental}
+1.  Template
+2.  
+:::
+
+
+
+# Q&A
+
+-   Open the floor for any questions.
+
+# Thank You!
