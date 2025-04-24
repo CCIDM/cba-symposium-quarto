@@ -61,6 +61,31 @@ After taking this workshop, participants should be able to:
 2.  
 :::
 
+# Publishing a professional portfolio website with Quarto with `Jarrod Griffin`
+
+## Expected Outcomes:
+
+::: {.incremental}
+- Walk away with a starter professional website including résumé
+- Publish your professional portfolio website
+- Understand options on linking a custom domain to a freely hosted website
+
+**Who here currently has a professional website?** 
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Q&A
