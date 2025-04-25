@@ -1,5 +1,5 @@
 ---
-title: "CBA Symposium: <span style='color: #b52b4c;'><br>An Introduction</span>"
+title: "CBA Symposium: <span style='color: #b52b4c;'><br>An Introducing Quarto as a Tool to Enhance Office Productivity and Transparency</span>"
 author: "Center for Customer Insights and Digital Marketing"
 institute: "Cal Poly Pomona"
 date: "04/25/2025"
@@ -31,8 +31,8 @@ execute:
 
 # Greetings and Introductions
 
--   Jae Jung, Ph.D., Professor of Marketing, Presenter
--   Jarrod Griffin, Master's Student - Digital Marketing, Presenter, Moderator
+-   Jae Jung, Ph.D., Professor of Marketing, Director of CCIDM
+-   Jarrod Griffin, Master's Student - Digital Marketing, Graduate Fellow, CCIDM
 
 # Announcement
 
@@ -46,16 +46,17 @@ execute:
 1.  Greetings and Introduction to Presenters (Moderator)
 2.  Announcement (Moderator)
 3.  Expected Learning Outcomes & Agenda (Moderator)
-4.  Overview of Quarto and reproducible publications (20 min)
+4.  Overview of Quarto and reproducible publications (15 min)
     -   Introduction to Quarto
     -   Quarto Formats
     -   Samples of Quarto documents
+    -   Steps in Preparing for a project
 5.  Publishing a professional portfolio website with Quarto (40 min)
     -   Why Quarto?
     -   Hands-On Build with Template
     -   Anatomy of a Quarto website
     -   Publishing the created website
-6.  Q&A (5 min)
+
 :::
 
 # Expected Learning outcomes:
@@ -63,9 +64,206 @@ execute:
 After taking this workshop, participants should be able to:
 
 ::: {.medium-small .incremental}
-1.  Template
-2.  
+1.  Describe how to do literate programming with Quarto
+2.  Learn how to set up and use Quarto within the RStudio IDE.
+3.  List the various output formats of Quarto.
+4.  Describe how to render basic Quarto documents to the various popular document formats.
+5.  Create a document with basic markdown functions.
+6.  Explain the various platforms that host websites and reproducible documents.
+7.  Explain how Quarto can be used for work and school.
 :::
+
+# Overview of Quarto and reproducible publications with `Dr. Jung`
+
+## Introduction to Quarto
+
+- What is Quarto?
+    - An open-source scientific and technical publishing system.
+    - Installation: <https://quarto.org/docs/get-started/>
+    
+. . .
+
+::: small-medium-text
+-   Support multiple coding languages:
+    -   R, Python, Julia, ObservableJS
+-   Supported by multiple IDEs
+    -   RStdudio, VS Code, Jupyter, Neovim
+:::
+
+. . .
+
+::: small-medium-text
+-   Publish to multiple hosting services
+    -   QaurtoPub, GitHub Pages, Posit Connect, Netlify, Hugging Face, etc.
+:::
+
+. . .
+
+::: small-medium-text
+-   Great for **reproducible research/publications/documents**.
+:::
+
+
+## Quarto Formats
+
+- HTML 
+- pdf
+- MS Word
+- Revealjs Presentation
+- PowerPoint
+- dashboard
+- Website
+- Blogs
+- Books
+
+
+## Quarto document Samples
+
+- My Quarto-pub website: <https://jmjung.quarto.pub/>
+- Quarto Gallery: <https://quarto.org/docs/gallery/>
+
+## Steps in Preparing for a project
+
+- R & RStudio:
+    - Installation: <https://posit.co/download/rstudio-desktop/>
+
+---
+
+### 1. Start a new project
+
+-   Projects are the containers for all of your notebooks.
+
+::: incremental
+```         
+1.  From File, click `new project`
+2.  Select a new or existing directory depending on your needs
+3.  Select your folder that will contain your project.
+4.  Press create project
+```
+:::
+
+-   You should see your `.Rproj` file and others in the `Files` panel
+
+---
+
+### 2. Start a codebook/notebook and save it
+
+-   R Scripts file
+
+-   Rmd file
+
+-   Quarto file
+
+------------------------------------------------------------------------
+
+### 3. Start literate coding with Quarto
+
+---
+
+### Three Areas in Quarto File
+
+-   Detailed tutorials available at [the official Quarto site](https://quarto.org/docs/get-started/hello/rstudio.html)
+
+------------------------------------------------------------------------
+
+#### 1. Yaml header
+
+An YAML header demarcated by three dashes (`---`) on either end.
+
+```         
+---
+title: "Module 1 Introduction to R, RStudio, and Qurto"
+author: "Jae Jung"
+date: '`r format(Sys.time())`'
+format: 
+  html: 
+    toc: true
+    toc-depth: 4
+    embed-resources: true
+editor: visual
+execute: 
+  freeze: auto
+---
+```
+
+------------------------------------------------------------------------
+
+#### 2. Code chunk
+
+```{{r}}
+#| label: demo-code-chunk
+#| include: true
+
+#install.packages("tidyverse")
+#install.packages("palmerpenguins")
+library(tidyverse)
+library(palmerpenguins)
+```
+
+------------------------------------------------------------------------
+
+#### 3. Markdown text area
+
+::: incremental
+-   Text area is all the canvas area within qmd file other than Yaml header and code chun areas.
+
+-   Quarto uses markdown syntax for text.
+
+-   You can use text area for typing prose as you would normally do in MS Word or Google Doc.
+
+    -   Text with formatting: section headers, hyperlinks, an embedded image, and an inline code chunk.
+
+-   You can also style it: e.g., **Bold**; *Italicize*
+:::
+
+------------------------------------------------------------------------
+
+::: {.callout-tip .incremental title="Coding Tips"}
+[**Be Careful**]{.red-text}: do **not** ***code*** in the **text area**.
+
+-   It is possible to type the code and run in the text area.
+-   However, it won't be read and rendered into a document.
+-   During the rendering, RStudio will be in an auto-pilot mode and will treat everything in the text area as a text except for `in-line code`.
+:::
+
+## Qurto Interface
+
+### Visual editor
+
+-   Easier to those who are familiar with MS Word or Google Doc.
+-   To add something; press `ctrl/commnad` + `/`
+-   Adding table by hand is cumbersome.
+-   Adding an figure/image
+
+------------------------------------------------------------------------
+
+### Source editor
+
+-   Easier to those who are familiar with R Script file or Rmd file.
+-   Useful for debugging any Quarto syntax errors since it’s often easier to catch these in plain text.
+-   Handy reference sheet available at the RStudio menu:
+    -   *Help \> Markdown Quick Reference*
+
+## Literate Programming in Quarto
+
+Hands-on visualization activity if time permitted
+
+```{r}
+#| echo: true
+#| output-location: column-fragment
+library(tidyverse)
+library(gt)
+mpg |> 
+    count(drv) |> 
+    mutate(percent = n/sum(n)) |> 
+    gt() |> 
+    fmt_percent(columns = percent,
+                decimals = 2) |> 
+    tab_header(title = md("**Number of Cars by Drive Train Type**")) |> 
+    tab_source_note(source_note = md("**Note**: The data is from `ggplot2` package"))
+    
+```
+
 
 # Publishing a professional portfolio website with Quarto with `Jarrod Griffin`
 
