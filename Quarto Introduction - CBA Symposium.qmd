@@ -98,9 +98,30 @@ Who here currently has a professional website?
 #### - RStudio installed
 #### - Internet connection
 
+## 1 Clone the Template
 
+**Option A** – RStudio GUI  
+1. *File › New Project › Version Control › Git*  
+2. Paste repo URL [https://github.com/CCIDM/portfolio-website-template](https://github.com/CCIDM/portfolio-website-template) → *Create*  
 
+<br><br>
 
+**Option B** – Console (no Git required)  
+```r
+dest <- "~/PortfolioProject"  # change if you like
+if (!dir.exists(dest)) dir.create(dest, recursive = TRUE)
+
+usethis::create_from_github(
+  "CCIDM/portfolio-website-template",
+  destdir = dest,      
+  open   = TRUE 
+)
+
+```
+
+<br><br>
+
+**Option C** – Download .zip from GitHub link and open .Rproj
 
 
 
