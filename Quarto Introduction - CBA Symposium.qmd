@@ -23,6 +23,8 @@ format:
     minScale: 0.2
     maxScale: 2.0
     scrollable: true
+    html:
+      unsafe: true
 execute: 
   freeze: auto
 ---
@@ -68,16 +70,33 @@ After taking this workshop, participants should be able to:
 ::: {.incremental}
 - Walk away with a starter professional website including résumé
 - Publish your professional portfolio website
+- Customize themeing via SCSS 
 - Understand options on linking a custom domain to a freely hosted website
+:::
 
-**Who here currently has a professional website?** 
+::: {.fragment}
+Who here currently has a professional website? 
 :::
 
 
+## Why Quarto for a professional portfolio website?
+- **Write once → ship anywhere** (HTML, slides, dashboards) 
+- Native **R / Python** for fully reproducible analytics  
+- _Examples_: Refer to Dr. Jung’s section  
+- Zero-cost hosting: GitHub Pages · Quarto Pub · Netlify 
+
+## Live Example - Quick Tour
+
+<iframe src="https:jarrodgriffin.com" width="100%" height="800"></iframe>
 
 
+## Hands-On Live Build <br><br>
 
 
+### Follow along to create your own professional website! Instructions on next slide. Requirements: <br><br>
+
+#### - RStudio installed
+#### - Internet connection
 
 
 
