@@ -1699,6 +1699,36 @@ A page featuring your CV, built using Markdown and the Vitae package.</p></li>
 </li>
 <li>Perfect for quick public proofs-of-concept; custom domains planned but not yet available.</li>
 </ul>
+</section>
+<section id="point-your-site-to-a-custom-domain" class="slide level2 scrollable">
+<h2>Point your site to a custom domain</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="github-pages">GitHub Pages</h3>
+<ol type="1">
+<li><strong>Settings › Pages › Custom domain</strong> – enter <code>www.example.com</code>.<br>
+</li>
+<li>At your DNS provider add
+<ul>
+<li><strong>CNAME</strong> record → <code>USER.github.io</code> (for <code>www</code>).<br>
+</li>
+<li>For the root domain add four <strong>A records</strong> →<br>
+<code>185.199.108.153</code>, <code>185.199.109.153</code>, <code>185.199.110.153</code>, <code>185.199.111.153</code>.<br>
+</li>
+</ul></li>
+<li>Back in Pages, tick <strong>Enforce HTTPS</strong> once the green-lock appears (GitHub issues the Let’s Encrypt certificate automatically).</li>
+</ol>
+</div><div class="column" style="width:50%;">
+<h3 id="netlify">Netlify</h3>
+<ol type="1">
+<li><strong>Site dashboard › Domain management › Add domain</strong> – choose “Add a domain you already own”.<br>
+</li>
+<li>Netlify displays the exact DNS records (usually one <strong>CNAME</strong> for <code>www</code> or an <strong>ALIAS/ANAME</strong> for the apex). Copy them to your registrar.<br>
+</li>
+<li>Netlify provisions and renews its Let’s Encrypt certificate automatically—no extra steps.</li>
+</ol>
+</div>
+</div>
 </section></section>
 <section id="qa" class="title-slide slide level1 center">
 <h1>Q&amp;A</h1>
