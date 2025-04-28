@@ -310,12 +310,14 @@ Who here currently has a professional website?
 
 **Option B** – Console (no Git required)  
 ```r
-dest <- "~/PortfolioProject"  # change if you like
-if (!dir.exists(dest)) dir.create(dest, recursive = TRUE)
+install.packages("usethis")
+
+destination_directory <- "~/PortfolioProject"  # change if you like
+if (!dir.exists(destination_directory)) dir.create(destination_directory, recursive = TRUE)
 
 usethis::create_from_github(
   "CCIDM/portfolio-website-template",
-  destdir = dest,      
+  destdir = destination_directory,      
   open   = TRUE 
 )
 
