@@ -36,9 +36,7 @@ execute:
 
 # Announcement
 
--   Workshop slide materials available at <https://github.com/CCIDM/cba-symposium-quarto>
 -   Live slides available at <https://ccidm.github.io/cba-symposium-quarto>
--   Questions
 
 # Overall Agenda
 
