@@ -352,7 +352,7 @@ A well-organized portfolio website might include the following pages:
 | `index.qmd`   | Home page – intro & value statement |
 | `marketing-analytics.qmd` | Data-driven case studies |
 | `strategic-marketing.qmd` | Strategy & positioning projects |
-| `resume/`     | CV in markdown and one-page PDF resume |
+| `resume.qmd`     | CV in markdown and one-page PDF resume |
 | `listings/`   | Five deep-dive project pages (01-…, 02-…, …) |
 | `data/`       | Raw datasets, HTML exports (e.g., SEO report) |
 | `images/`     | Headshots, hero banners, thumbnails |
