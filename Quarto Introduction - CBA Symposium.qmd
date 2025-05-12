@@ -325,7 +325,10 @@ usethis::create_from_github(
 
 **Option C** – Download .zip from GitHub link and open .Rproj
 
-## Sever Git connection to original repo
+## Needed Admin Actions
+<br><br>
+
+### Sever Git connection to original repo
 
 ::: {.callout-important title="Sever the remote connection"}
 ```bash
@@ -333,6 +336,15 @@ git remote remove origin
 ```
 Run this command to disconnect your local repository from the remote named **origin**.
 :::
+<br><br>
+
+### Install tinytext for PDF resume
+
+```r
+install.packages(c("tinytex"))
+
+tinytex::install_tinytex() 
+```
 
 
 ## Site Structure
@@ -391,7 +403,6 @@ portfolio-website/
 ├── resume/
 │   ├── YOUR-NAME-Resume.Rmd
 │   └── YOUR-NAME-Resume.pdf
-├── docs/           # ← output-dir for GitHub Pages
 └── personal_website.Rproj
 ```
 
