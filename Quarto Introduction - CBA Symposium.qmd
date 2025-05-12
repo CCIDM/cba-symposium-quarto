@@ -325,6 +325,15 @@ usethis::create_from_github(
 
 **Option C** – Download .zip from GitHub link and open .Rproj
 
+## Sever Git connection to original repo
+
+::: {.callout-important title="Sever the remote connection"}
+```bash
+git remote remove origin
+```
+Run this command to disconnect your local repository from the remote named **origin**.
+:::
+
 
 ## Site Structure
 
